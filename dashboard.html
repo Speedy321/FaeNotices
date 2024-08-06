@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>FaeNotices Dashboard</title>
+
+    <link rel="stylesheet" href="style/dashboard.css">
+    <link rel="stylesheet" href="style/notice_bubble.css">
+</head>
+<body>
+    <div id="menu">
+        <div class="row">
+            <button id="new_notice" onclick="newNotice()">
+                New notice
+            </button>
+            <button id="commands" onclick="editCommands()">
+                Manage commands
+            </button>
+            <button id="autorun_toggle" onclick="toggleAutoRun()">
+                Activate Auto Play
+            </button>
+        </div>
+        <div class="row">
+            <label for="delayMS">Delay between notices (in seconds):</label>
+            <input type="number" name="delayMS" id="delay_ms" min="0" value="1">
+        </div>
+    </div>
+
+    <div id="notice_container">
+        <h1>Current Notices: </h1>
+        
+        <div id="notice_list">
+            <!-- Auto populated -->
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>FaeNotices by Erdna/Speedy3210</p>
+    </div>
+
+    <div id="new_notice_form" class="ui" hidden>
+        <h1>New Notice:</h1>
+        <form>
+            <label for="bgPath">Background Image or Video:</label>
+            <p class="tip">The image or video file must be placed in the "assets" folder.</p>
+            <select name="bgPath" id="bg_path_select">
+                <option value="path1">path1</option>
+                <option value="path2">path2</option>
+                <option value="path3">path3</option>
+            </select>
+            <label for="noticeText">Notice Message:</label>
+            <textarea name="noticeText" id="notice_text_area" cols="30" rows="10">Hi chat!</textarea>
+        </form>
+        <div class="row">
+            <button onclick="addNewNotice()">Add</button>
+            <button onclick="closeNewNotice()">Close</button>
+        </div>
+    </div>
+
+    <script src="src/file_helpers.js"></script>
+    <script src="src/dashboard_helpers.js"></script>
+    <script src="src/dashboard_premades.js"></script>
+    <script src="src/dashboard.js"></script>
+</body>
+</html>

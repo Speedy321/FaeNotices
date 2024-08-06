@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #444444;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#menu button{
+    margin: 2px;
+}
+
+#menu div{
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+#menu label{
+    margin-left: 4px;
+    margin-right: 4px;
+    color: #1d1d1d;
+}
+
+#menu input{
+    width: 4rem;
+}
+
+#notice_container{
+    background-color: #575757;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 80px;
+    /* width: min-content; */
+}
+
+#notice_container h1{
+    color: darkgray;
+    text-decoration-line: underline;
+    margin-top: 0;
+}
+
+#notice_list {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    padding: 5px;
+    /* width: min-content; */
+    min-width: 205px;
+
+    /*Make a "transparency" checkerboard*/
+    background-image: linear-gradient(45deg, #808080 25%, transparent 25%), linear-gradient(-45deg, #808080 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #808080 75%), linear-gradient(-45deg, transparent 75%, #808080 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.card {
+    position: relative;
+    height: 400px;
+    width: 600px;
+    margin: 5px;
+    
+    border-width: 2px;
+    /* border-style: solid; */
+    border-color: #1d1d1d;
+
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgb(44, 44, 44);
+}
+
+.card img{
+    height: 400px;
+    width: 600px;
+}
+
+.card_controls {
+    position: relative;
+    float: right;
+    margin: 10px;
+    z-index: 10;
+    zoom: 2;
+    -moz-transform: scale(2);
+}
+
+.card_controls input{
+    transform: scale(1.5);
+}
+
+#footer {
+    color: #808080;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.ui {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background-color: #1d1d1d;
+    padding: 25px;
+    z-index: 100;
+    color: #d6d6d6;
+    border-radius: 25px;
+}
+
+.ui h1 {
+    margin: 0;
+}
+
+.ui label {
+    margin-top: 10px;
+}
+
+.ui button {
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.tip {
+    color: #808080;
+    font-style: italic;
+    font-size: small;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}

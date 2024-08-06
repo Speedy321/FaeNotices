@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>FaeNotices Bubble</title>
+
+    <link rel="stylesheet" href="style/notice_bubble.css">
+
+</head>
+<body>
+    <div id="main">
+        <video playsinline autoplay muted loop>
+            <source src="" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <img src="">
+        <div id="content" class="container">
+            <p>Hello World</p>
+        </div>
+    </div>
+
+    <script src="src/file_helpers.js"></script>
+    <script src="src/notice_bubble.js"></script>
+    <script type="text/javascript">
+        //localStorage.clear()
+        window.shown = "";
+        setInterval(poolDisplayNotice, 250);
+        poolDisplayNotice();
+    </script>
+</body>
+</html>
