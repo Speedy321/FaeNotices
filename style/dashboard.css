@@ -62,8 +62,8 @@ body {
 
 .card {
     position: relative;
-    height: 400px;
-    width: 600px;
+    height: 200px;
+    width: 300px;
     margin: 5px;
     
     border-width: 2px;
@@ -74,8 +74,8 @@ body {
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
 
-    zoom: 0.5;
-    -moz-transform: scale(0.5);
+    /* transform: scale(0.5);
+    transform-origin: 0 0; */
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -83,18 +83,13 @@ body {
     box-shadow: 0 8px 16px 0 rgb(44, 44, 44);
 }
 
-.card img{
-    height: 400px;
-    width: 600px;
-}
-
 .card_controls {
     position: relative;
     float: right;
-    margin: 10px;
-    z-index: 10;
-    zoom: 2;
-    -moz-transform: scale(2);
+    align-self: end;
+    margin-right: 10px;
+    /* zoom: 2;
+    -moz-transform: scale(2); */
 }
 
 .card_controls input{
@@ -145,4 +140,42 @@ form {
 .row {
     display: flex;
     flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+#new_notice_form {
+    /* width: 80%; */
+}
+
+#inputs {
+    margin-top: 15px;
+    /* width: 100px; */
+}
+
+#inputs div {
+    margin-top: 3px;
+}
+
+#inputs label {
+    margin-top: 0px;
+    margin-right: 5px;
+}
+
+#preview {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    /* width: 200%;
+    height: 200%; */
+    overflow: hidden;
+    /* transform: scale(1); */
+}
+
+.iframe-container {
+    width: fit-content;
+    height: fit-content;
 }

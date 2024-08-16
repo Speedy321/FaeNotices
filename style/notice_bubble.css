@@ -1,38 +1,13 @@
-:root {
-    --total-height: 400px;
-    --total-width: 600px;
-
-    --text-box-height: auto;
-    --text-box-width: 60%;
-    --text-box-position-from-bottom: 20px;
-    --text-box-position-from-left: 20px;
-
-    --text-bg-color: #2bc075;
+iframe {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
-#main {
-    width: var(--total-width);
-    height: var(--total-height);
-    /* background-color: blueviolet; */
+::-webkit-scrollbar {
+    display: none;
 }
 
-.container {
-    position: absolute;
-    top: var(--text-box-position-from-top);
-    left: var(--text-box-position-from-left);
-    background-color: var(--text-bg-color);
-    border-radius: 20px;
-    padding: 10px 20px;
-    margin: 15px;
-    width: var(--text-box-width);
-    height: var(--text-box-height);
-    z-index: 1;
-}
-
-/* Add rounded corners to the top left and the top right corner of the image */
-img {
-    position: absolute;
-    height: var(--total-height);
-    width: var(--total-width);
-    border-radius: 5px 5px 0 0;
+body {
+    overflow: hidden;
 }

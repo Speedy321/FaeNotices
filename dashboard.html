@@ -4,7 +4,7 @@
     <title>FaeNotices Dashboard</title>
 
     <link rel="stylesheet" href="style/dashboard.css">
-    <link rel="stylesheet" href="style/notice_bubble.css">
+    <!-- <link rel="stylesheet" href="style/notice_bubble.css"> -->
 </head>
 <body>
     <div id="menu">
@@ -20,8 +20,8 @@
             </button>
         </div>
         <div class="row">
-            <label for="delayMS">Delay between notices (in seconds):</label>
-            <input type="number" name="delayMS" id="delay_ms" min="0" value="1">
+            <label for="delayS">Delay between notices (in seconds):</label>
+            <input type="number" name="delayS" id="delay_s" min="0" value="10">
         </div>
     </div>
 
@@ -39,17 +39,14 @@
 
     <div id="new_notice_form" class="ui" hidden>
         <h1>New Notice:</h1>
-        <form>
-            <label for="bgPath">Background Image or Video:</label>
-            <p class="tip">The image or video file must be placed in the "assets" folder.</p>
-            <select name="bgPath" id="bg_path_select">
-                <option value="path1">path1</option>
-                <option value="path2">path2</option>
-                <option value="path3">path3</option>
-            </select>
-            <label for="noticeText">Notice Message:</label>
-            <textarea name="noticeText" id="notice_text_area" cols="30" rows="10">Hi chat!</textarea>
-        </form>
+        <div class="col">
+            <label for="templateSelect">Select template file: </label>
+            <input type="file" name="templateSelect" id="template-select" accept=".template">
+        </div>
+        <div class="col" id="inputs">
+            
+        </div>
+        <iframe scrolling="no" src="" id="preview" frameborder="0" class="card"></iframe>
         <div class="row">
             <button onclick="addNewNotice()">Add</button>
             <button onclick="closeNewNotice()">Close</button>
@@ -58,7 +55,6 @@
 
     <script src="src/file_helpers.js"></script>
     <script src="src/dashboard_helpers.js"></script>
-    <script src="src/dashboard_premades.js"></script>
     <script src="src/dashboard.js"></script>
 </body>
 </html>
