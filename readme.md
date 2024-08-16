@@ -6,7 +6,7 @@ Fae Notice is a Custom Dock and Browser Source for [OBS](https://obsproject.com/
 
 ### Installing into OBS
 
-1) Download the latest release package from the release section or [here](https://github.com/Speedy321/FaeNotices/releases/latest).
+1) Download the latest release package (*Source Code zip file*) from the release section or from [the latest here](https://github.com/Speedy321/FaeNotices/releases/latest).
 2) Unzip the content to a good place on your computer.
 3) In OBS Studio, go => Docks => Custom Browser Docks.
 
