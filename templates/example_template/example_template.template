@@ -1,0 +1,16 @@
+{
+    "version": "1.0",
+    "html": "templates/example_template/example_template.html",
+    "width": "600",
+    "height": "200",
+    "config": {
+        "text": {
+            "type": "string",
+            "value": "Hello world!"
+        },
+        "bg-color": {
+            "type": "color",
+            "value": "#6300c0"
+        }
+    }
+}
