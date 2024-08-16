@@ -9,7 +9,9 @@ Fae Notice is a Custom Dock and Browser Source for [OBS](https://obsproject.com/
 1) Download the latest release package from the release section or [here](https://github.com/Speedy321/FaeNotices/releases/latest).
 2) Unzip the content to a good place on your computer.
 3) In OBS Studio, go => Docks => Custom Browser Docks.
+
 ![Custom Broser Docks menu location](docs/readme_assets/image.png)
+
 4) Add a new Dock by entering a name and the path from the `dashboard.html` file that is in the folder you unzipped Fae Notices to in the following format: `file://<absolute path to>\dashboard.html`.
 
 > Ex: Fae Notices has been unzipped into (on windows):
@@ -37,7 +39,9 @@ Then the path to put into the custom dock will be:
 2) On the new notice pannel, use the file picker to pick a notice template file. The pannel will autopulate with customisation options for that template.
 > *Notice templates NEED to be in the `templates` folder in your Fae Notices unzip/install folder*
 3) Customize your notice as needed, using the preview to see what it will look like.
+
 ![new notice pannel with template selected](docs/readme_assets/image-1.png)
+
 4) Click `Add`, the notice should appear in the list underneat.
 5) You can add multiple notices this way, once you're done, click `close`.
 
@@ -50,11 +54,13 @@ Each notice created, and displayed in the `Current Notices` list has a `X` butto
 
 Assuming the autmated carousel isn't active (see next section), and assuming you have created notices, you can click the `[--]` button to display it on your browser source. *If the notice is animated, it will loop through it's animation automaticaly*
 When a notice is being displayed, the `[--]` button will change to `[<>]`. Clicking on it again will hide the notice.
+
 ![two notices, one displayed and one hidden](docs/readme_assets/image-3.png)
 
 ### Using the automated carousel
 
 Each notice in the notice list has a check box next to the `[--]`/`[<>]` and `X` buttons. Every notice where this check box is *checked* is considered part of the carousel. To activate the carousel, use the `Activate Auto Play` button on the top bar of the Dock. This button will change into `Deactivate Auto Play` and can be clicked again to stop the carousel. Under this button is a setting to set the amount of time, in seconds, each notice will be displayed for when the carousel is actif.
+
 ![Fae Notices Dock main menu with carousel controls](docs/readme_assets/image-4.png)
 
 ## Creating your own notice templates
